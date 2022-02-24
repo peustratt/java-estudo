@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class exercicio_01 {
+public class exercicio_extra {
     public static void main(String[] args) {
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
