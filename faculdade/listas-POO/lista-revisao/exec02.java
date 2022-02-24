@@ -17,7 +17,7 @@ public class exec02 {
         int[] tamanho = new int[expo - 1];
         int result = base;
 
-        for (int i : tamanho) {
+        for (int i=0; i < tamanho.length; i++) {
             result *= base;
         }
 
