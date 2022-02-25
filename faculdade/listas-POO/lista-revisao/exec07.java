@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.Scanner;
 
 // Faça um programa que receba uma frase e uma palavra.
