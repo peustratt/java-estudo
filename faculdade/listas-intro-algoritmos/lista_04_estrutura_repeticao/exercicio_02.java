@@ -6,10 +6,11 @@ import java.util.Scanner;
 /** Escreva um programa que receba um número qualquer do usuário e calcule o fatorial deste número.*/
 
 public class exercicio_02 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args){
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         System.out.println("Digite o numero: ");
         int num = in.nextInt();

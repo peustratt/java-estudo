@@ -4,9 +4,10 @@ import meu_local.MyLocal;
 import java.util.Scanner;
 
 public class exercicio_02 {
+    static Scanner in = new Scanner(System.in);
     public static void  main(String[] args) {
         MyLocal.setarUs();
-        Scanner in = new Scanner(System.in);
+
 
 
         int[][] matriz = {

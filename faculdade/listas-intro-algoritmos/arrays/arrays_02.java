@@ -4,10 +4,11 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class arrays_02 {
+    static Scanner in = new Scanner(System.in);
     public static void main(String[] args){
         Locale us = new Locale("us", "en");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
+
         String[] nomes = new String[5];
 
         for (int i=0; i < nomes.length; i++){

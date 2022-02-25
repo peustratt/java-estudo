@@ -12,9 +12,10 @@ import meu_local.MyLocal;
 import java.util.Scanner;
 
 public class exercicio_03 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         MyLocal.setarUs();
-        Scanner in = new Scanner(System.in);
 
         float tempMax, tempMin, tempMedia = 0;
         int contMenorQueMedia = 0;

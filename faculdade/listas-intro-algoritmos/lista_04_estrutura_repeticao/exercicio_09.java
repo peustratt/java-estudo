@@ -14,10 +14,11 @@ import java.util.Scanner;
 
 
 public class exercicio_09 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args){
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         float somaSalario = 0, salario, maiorSalario = 0;
         System.out.println("Digite a quantidade de cadastros que serão realizados: ");

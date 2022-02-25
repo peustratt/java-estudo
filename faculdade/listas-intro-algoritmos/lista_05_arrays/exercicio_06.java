@@ -7,9 +7,10 @@ import meu_local.MyLocal;
 import java.util.Scanner;
 
 public class exercicio_06 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         MyLocal.setarUs();
-        Scanner in = new Scanner(System.in);
 
         int[] vetor = {20, 50, 13, 52, 456, 123, 54, 13, 29, 8, 55, 45, 62, 1, 3};
         int[] vetorRev = new int[vetor.length];

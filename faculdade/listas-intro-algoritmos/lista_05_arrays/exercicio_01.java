@@ -10,9 +10,10 @@ import meu_local.MyLocal;
 import java.util.Scanner;
 
 public class exercicio_01 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         MyLocal.setarUs();
-        Scanner in = new Scanner(System.in);
         String[] vetorA = {"Hello man!", "Xands", "Peter", "Jack", "Missisipi"}, vetorB = {"Bye man", "Polko", "Pig", "David", "Kirk"};
         String temporarioB;
 

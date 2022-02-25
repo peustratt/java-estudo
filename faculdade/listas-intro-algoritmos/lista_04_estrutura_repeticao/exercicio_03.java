@@ -8,10 +8,11 @@ import java.util.Scanner;
  determine o maior e o menor valor deste conjunto de números. */
 
 public class exercicio_03 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args){
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         int max = 0;
         int num, min;

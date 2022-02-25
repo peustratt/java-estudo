@@ -8,10 +8,11 @@ import java.util.Scanner;
  estão fora deste intervalo. */
 
 public class exercicio_04 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args){
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         int cont = 0;
         int num;

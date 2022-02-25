@@ -8,9 +8,10 @@ import meu_local.MyLocal;
 import java.util.Scanner;
 
 public class exercicio_02 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         MyLocal.setarUs();
-        Scanner in = new Scanner(System.in);
 
         int[] vetorA = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, vetorB = new int[10];
 

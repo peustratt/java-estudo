@@ -5,15 +5,17 @@ import java.util.Scanner;
 
 /** */
 public class exercicio_05 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args){
         Locale us = new Locale("en", "us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         int opcao, cont_1 = 0, cont_2 = 0, cont_3 = 0, cont_4 = 0, cont_5 = 0, cont_6 = 0;
         int totalDeVotos;
-        String menu = "Código \n1 - José\n2 - Maria\n3 - Paulo\n 4 - Carla\n 5 - Branco\n 0 - Encerrar programa";
+        String menu = "Código \n1 - José\n2 - Maria\n3 - Paulo\n4 - Carla\n5 - Branco\n0 - Encerrar programa";
 
+        System.out.println(menu);
         do {
             System.out.println("Digite o código do seu candidato");
             opcao = in.nextInt();

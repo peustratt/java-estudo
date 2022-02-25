@@ -4,10 +4,11 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class exercicio_01 {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
         Locale us = new Locale("en","us");
         Locale.setDefault(us);
-        Scanner in = new Scanner(System.in);
 
         int[][] matriz = {
                 {1 ,2, 3},
