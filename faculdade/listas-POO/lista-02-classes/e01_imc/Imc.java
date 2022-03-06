@@ -1,4 +1,4 @@
-package aquecimento;
+package e01_imc;
 
 import java.util.Scanner;
 

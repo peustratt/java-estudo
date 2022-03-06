@@ -1,4 +1,4 @@
-package aquecimento;
+package e01_imc;
 
 public class Pessoa {
     String nome;
