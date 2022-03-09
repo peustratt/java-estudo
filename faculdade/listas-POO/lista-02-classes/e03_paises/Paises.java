@@ -1,7 +1,11 @@
 package e03_paises;
 
+import java.util.Locale;
+
 public class Paises {
+    
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         String[] cidadesPE = { "Recife", "Gravatá", "Caruaru", "Carpina", "Timbaúba" },
                 cidadesPB = { "João Pessoa", "Campina Grande", "Patos", "Boqueirão", "Cabaceiras" },
                 cidadesAL = { "Maceio", "Maragogi", "Varzea do Una", "Delmiro Gouveia", "Arapiraca" },

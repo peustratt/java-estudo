@@ -22,6 +22,6 @@ public class Estado {
         for (String cidade : this.cidades) {
             System.out.printf("%s, ", cidade);
         }
-        System.out.printf("\nArea: %f km²\n \n", this.dimensao);
+        System.out.printf("\nArea: %.2f km²\n \n", this.dimensao);
     }
 }
