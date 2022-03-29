@@ -10,15 +10,11 @@ public class Usuario {
         this.contatos = contatos;
     }
 
-    Usuario(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
-    }
-
     public String toString() {
         String infoCompleta = this.nome + "\n" + Utils.formataCpf(this.cpf);
-        for (Contato contato: contatos) {
-            infoCompleta += contato;
+        for (int i=0; i < contatos.length; i++) {
+            infoCompleta += "\n-----------\n";
+            infoCompleta += "Contato: " + (i+1) + "\n" + contatos[i];
         }
         return infoCompleta;
     }
