@@ -20,6 +20,13 @@ public class Contato {
     }
 
     public String toString() {
-        return String.format("Nome: %s\nIdade: %d\nSexo: %s\nCelular: %s\nEmail: %s", this.nome, this.idade, this.sexo, Utils.formataCelular(this.celular), this.email);
+        // String celular = this.celular == null ? null : Utils.formataCelular(this.celular);
+        String stringRetorno;
+        if (this.idade == 0) {
+            stringRetorno = String.format("Nome: %s", this.nome);
+        } else {
+            stringRetorno = String.format("Nome: %s\nIdade: %d\nSexo: %s\nCelular: %s\nEmail: %s", this.nome, this.idade, this.sexo, Utils.formataCelular(this.celular), this.email);
+        }
+        return stringRetorno;
     }
 }
