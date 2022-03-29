@@ -53,7 +53,6 @@ public class Principal {
         String nome = in.nextLine();
         System.out.println("Digite a idade: ");
         int idade = in.nextInt();
-        // Como o nextInt ñ consome o \n
         in.nextLine();
         System.out.println("Digite o sexo: ");
         String sexo = in.nextLine();
