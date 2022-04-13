@@ -6,6 +6,7 @@ public class Contato {
     String sexo;
     String celular;
     String email;
+    static int DDI = 55;
 
     Contato(String nome, int idade, String sexo, String celular, String email) {
         this.nome = nome;
@@ -25,7 +26,7 @@ public class Contato {
         if (this.idade == 0) {
             stringRetorno = String.format("Nome: %s", this.nome);
         } else {
-            stringRetorno = String.format("Nome: %s\nIdade: %d\nSexo: %s\nCelular: %s\nEmail: %s", this.nome, this.idade, this.sexo, Utils.formataCelular(this.celular), this.email);
+            stringRetorno = String.format("Nome: %s\nIdade: %d\nSexo: %s\nCelular: %s\nEmail: %s", this.nome, this.idade, this.sexo, DDI + " " + Utils.formataCelular(this.celular), this.email);
         }
         return stringRetorno;
     }
