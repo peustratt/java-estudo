@@ -26,7 +26,7 @@ public class Funcionario {
     }
 
     public void setNome(String nome) {
-        if (!nome.equals(null) || !nome.equals("")) {
+        if (!nome.equals(null) && !nome.equals("")) {
             this.nome = nome;
         } else {
             System.out.println("Digite uma string válida!");

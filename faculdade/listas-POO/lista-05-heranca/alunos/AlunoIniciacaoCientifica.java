@@ -13,7 +13,7 @@ public class AlunoIniciacaoCientifica extends Aluno {
     }
 
     public void setTituloProjeto(String tituloProjeto) {
-        if (!tituloProjeto.equals(null) || !tituloProjeto.equals("")) {
+        if (!tituloProjeto.equals(null) && !tituloProjeto.equals("")) {
             this.tituloProjeto = tituloProjeto;
         } else {
             System.out.println("Digite uma string válida!");

@@ -30,7 +30,7 @@ public class Aluno {
     }
 
     public void setNome(String nome) {
-        if (!nome.equals(null) || !nome.equals("")) {
+        if (!nome.equals(null) && !nome.equals("")) {
             this.nome = nome;
         } else {
             System.out.println("Digite uma string válida!");
@@ -42,7 +42,7 @@ public class Aluno {
     }
 
     public void setArea(String area) {
-        if (!area.equals(null) || !area.equals("")) {
+        if (!area.equals(null) && !area.equals("")) {
             this.area = area;
         } else {
             System.out.println("Digite uma string válida!");
