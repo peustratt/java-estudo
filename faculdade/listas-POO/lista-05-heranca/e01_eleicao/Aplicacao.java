@@ -39,9 +39,31 @@ public class Aplicacao {
                 }
             }
 
-
         }
 
+        Candidato vencedor = candidatos[0];
+        String nomeCand01 = candidatos[0].getNome();
+        int votosCand01 = candidatos[0].getNumVotos();
+        String nomeCand02 = candidatos[1].getNome();
+        int votosCand02 = candidatos[1].getNumVotos();
+        float totalVotos = votosCand01 + votosCand02;
+        boolean empate = false;
+
+        if (votosCand01 < votosCand02) {
+            vencedor = candidatos[1];
+        } else if (votosCand01 == votosCand02) {
+            empate = false;
+        } else {
+            vencedor = candidatos[0];
+        }
+
+        if (!empate) {
+            System.out.println("\nO vencedor foi");
+            System.out.println(vencedor);
+            System.out.println("Tabela de votos: ");
+            System.out.printf("Nome: %s, Votos recebidos: %d, percentual do total de votos: %.2f%%", nomeCand01, votosCand01, ((votosCand01/totalVotos) * 100));
+            System.out.printf("\nNome: %s, Votos recebidos: %d, percentual do total de votos: %.2f%%\n", nomeCand02, votosCand02, ((votosCand02 / totalVotos) * 100));
+        }
     }
 
     public static Candidato cadastraCandidato() {
